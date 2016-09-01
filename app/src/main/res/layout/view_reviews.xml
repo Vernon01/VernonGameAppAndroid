@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vernon.vernongameapplication.Views.ViewReviewsActivity">
+
+    <EditText android:text="@string/view_game_title" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/view_game_title"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/view_input_game_category"
+        android:layout_toStartOf="@+id/view_input_game_category"
+        android:layout_marginTop="52dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/game_year"
+        android:id="@+id/game_year"
+        android:layout_marginTop="89dp"
+        android:layout_below="@+id/view_game_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/view_game_title"
+        android:layout_toStartOf="@+id/view_game_title"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_input_game_year"
+        android:inputType="textShortMessage"
+        android:hint="@string/game_year"
+        android:layout_alignTop="@+id/game_year"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/view_game_category"
+        android:id="@+id/game_category"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/game_category"
+        android:id="@+id/view_input_game_category"
+        android:layout_alignTop="@+id/game_category"
+        android:layout_alignRight="@+id/view_input_game_year"
+        android:layout_alignEnd="@+id/view_input_game_year" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit"
+        android:id="@+id/edit_button"
+        android:clickable="false"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/delete_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:id="@+id/delete_button"
+        android:layout_below="@+id/view_input_game_category"
+        android:layout_alignRight="@+id/view_input_game_category"
+        android:layout_alignEnd="@+id/view_input_game_category"
+        android:layout_marginTop="56dp" />
+
+</RelativeLayout>
